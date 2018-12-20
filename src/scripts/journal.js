@@ -12,3 +12,16 @@ const journalEntries = [
         mood: "Ok"
     },
 ]
+/*string template that represents a single journal entry object as HTML*/
+const makeJournalEntryComponent = (journalEntry)=> {
+    // Create your own HTML structure for a journal entry
+    let journalEntry<section>
+        <h3>Array methods</h3>
+        <p>07/24/2018</p>
+        <p>We learned about array methods, but only forEach made sense</p>
+        <p>ok</p>
+    </section>
+    return `
+
+    `
+}
