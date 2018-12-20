@@ -13,22 +13,22 @@ const journalEntries = [
     },
 ]
 //string template that represents a single journal entry object as HTML
-journalEntryStringTemplate=''
-const makeJournalEntryComponent = (journalEntry)=> {
-    let journalEntryStringTemplate=
-    `<section>
-        <h3>${journalEntry.concept}</h3>
-        <p>${journalEntry.date}</p>
-        <p>${journalEntry.entry}</p>
-        <p>${journalEntry.mood}</p>
-    </section>`
-    return journalEntryStringTemplate
-}
-const renderJournalEntries = (journalEntryStringTemplate) => {
-    const journalSection = document.querySelector('journal-section')
-    journalSection.innerHTML += journalEntryStringTemplate
-}
-journalEntries.forEach(entry=>{
-    let journalHTML= makeJournalEntryComponent(entry)
-    renderJournalEntries(journalHTML)
-})
+// journalEntryStringTemplate=''
+// const makeJournalEntryComponent = (journalEntry)=> {
+//     let journalEntryStringTemplate=
+//     `<section>
+//         <h3>${journalEntry.concept}</h3>
+//         <p>${journalEntry.date}</p>
+//         <p>${journalEntry.entry}</p>
+//         <p>${journalEntry.mood}</p>
+//     </section>`
+//     return journalEntryStringTemplate
+// }
+// const renderJournalEntries = (Entries) => {
+//     const journalSection = document.querySelector('#journal-section')
+//     journalSection.innerHTML += journalEntries
+//     journalEntries.forEach(entry=>{
+//     let journalEntryy=makeJournalEntryComponent(entry)
+//     renderJournalEntries(journalEntryy)
+//     })
+// }
