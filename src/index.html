@@ -5,39 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Daily-journal</title>
-    <link rel="stylesheet" href="journal.css">
+    <link rel="stylesheet" href="./styles/journal.css">
 </head>
 <body>
     <section>
-    <h1> Daily journal </h1>
-    <form>
+        <h1> Daily journal </h1>
+        <form>
     <!-- create a date field. -->
         <fieldset>
-             <label for = 'journalDate'>Date of entry</label>
+            <label for = 'journalDate'>Date of entry</label>
              <input type = 'date' name = 'journalDate' id = 'journalDate'>
-        </fieldset>
+            </fieldset>
     <!--  Creating short input field of type text for Concepts covered     -->
         <fieldset>
              <label for = 'journalDate'>Concepts covered</label>
              <input type = 'text' name = 'journalDate' id = 'journalDate'>
-        </fieldset>
+            </fieldset>
     <!-- Creating a textarea field for Journal entry -->
         <fieldset>
                 <label for='journalDate'>Journal entry</label>
                 <textarea id='journalDate' name='journalDate'></textarea>
-        </fieldset>
+            </fieldset>
     <!-- Creating a select element with option for Mood of the day -->
-        <fieldset>
+    <fieldset>
              <label for='journalDate'>Mood of the day</label>
              <select id='journalDate' name='journalDate'>
                  <option value='H'>Happy</option>
                  <option value='F'>Fine</option>
                  <option value='S'>Sad</option>
-             </select>
+                </select>
         </fieldset>
     <!-- Creating a button  -->
-             <button type = 'button' name = 'journalDate' id = 'journalDate'>Record journal entry</button>
+    <button type = 'button' name = 'journalDate' id = 'journalDate'>Record journal entry</button>
     </form>
 </section>
+<section id="journal-section"></section>
+<script src="./scripts/journal.js"></script>
 </body>
 </html>
